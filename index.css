@@ -3,7 +3,7 @@
   --secondary-color: #c0871d;
   --accent-color: #ad0000;
   --background-color: #b9b9b96b;
-  --text-color: #333333;
+  --text-color: #333;
 }
 
 * {
@@ -156,17 +156,6 @@ form input {
   border-radius: 8px;
 }
 
-.book-item-wrapper::-webkit-scrollbar {
-  background-color: var(--text-color);
-  color: black;
-  width: 0.2rem;
-}
-
-.book-item-wrapper::-webkit-scrollbar-thumb {
-  background-color: var(--background-color);
-  border-radius: 0.5rem;
-}
-
 article {
   padding-bottom: 0.7rem;
   padding-top: 0.7rem;
@@ -198,16 +187,6 @@ h1 {
   width: 90%;
 }
 
-.item-container p {
-  width: 25vw;
-  font-weight: bold;
-  overflow-x: scroll;
-}
-
-.item-container p::-webkit-scrollbar {
-  height: 0;
-}
-
 span {
   color: black;
   font-weight: bold;
@@ -234,11 +213,6 @@ span {
   font-size: 2.2rem;
   font-weight: bold;
   color: var(--secondary-color);
-}
-
-.contact-section p {
-  font-weight: bold;
-  font-size: 1.3rem;
 }
 
 .contact-section ul {
@@ -279,4 +253,30 @@ footer p {
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 0;
+}
+
+.contact-section p {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.item-container p {
+  width: 25vw;
+  font-weight: bold;
+  overflow-x: scroll;
+}
+
+.book-item-wrapper::-webkit-scrollbar {
+  background-color: var(--text-color);
+  color: black;
+  width: 0.2rem;
+}
+
+.book-item-wrapper::-webkit-scrollbar-thumb {
+  background-color: var(--background-color);
+  border-radius: 0.5rem;
+}
+
+.item-container p::-webkit-scrollbar {
+  height: 0;
 }
