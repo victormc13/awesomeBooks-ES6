@@ -8,11 +8,11 @@ class Book {
     this.author = author;
   }
 
-  storeBookLocally(bookArray) {     // eslint-disable-line
+  storeBookLocally = (bookArray) => {     // eslint-disable-line
     window.localStorage.setItem('bookArray', JSON.stringify(bookArray));
   }
 
-  displayItems() {
+  displayItems = () => {
     const items = document.querySelector('.book-item-wrapper');
     const h1 = document.createElement('h1');
     h1.textContent = 'All awesome books';
@@ -52,7 +52,7 @@ class Book {
     }
   }
 
-  addBook() {
+  addBook = () => {
     const storedBooks = JSON.parse(localStorage.getItem('bookArray')) || [];
     this.books = [
       ...storedBooks,
@@ -62,7 +62,7 @@ class Book {
     this.displayItems();
   }
 
-  removeBook(id) {
+  removeBook = (id) => {
     this.books = this.books.filter((book) => book.id !== id);
     this.storeBookLocally(this.books);
     this.displayItems();
