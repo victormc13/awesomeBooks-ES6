@@ -1,7 +1,7 @@
 {
   "name": "awesomebooks-es6",
   "version": "1.0.0",
-  "description": "",
+  "description": "<div align=\"center\">\r   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->\r   <img src=\"banner.jpg\" alt=\"logo\" />\r   <br/>",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,5 +19,8 @@
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.21.0"
+  },
+  "dependencies": {
+    "luxon": "^3.3.0"
   }
 }
